@@ -46,7 +46,7 @@ const PageTop = () => {
               <span className="char">あ</span>
               <span className="char">い</span>
               <span className="char">さ</span>
-              <span className="char">つ</span>仮
+              <span className="char">つ</span>
             </h1>
           </div>
 
