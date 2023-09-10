@@ -176,7 +176,7 @@
 .grtText {
   position: relative;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .greetMessege.inview .grtText {
@@ -405,11 +405,12 @@
 }
 
 .place h2 {
+  font-size: 28px;
   margin: 5px 0;
 }
 
 .place p {
-  font-size: 7px;
+  font-size: 11px;
   margin-top: 0;
 }
 
