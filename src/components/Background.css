@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 400px) {
   .backgroundImage {
     display: none;
   }
