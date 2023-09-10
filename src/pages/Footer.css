@@ -78,6 +78,7 @@ p {
 @media screen and (max-width: 640px) {
   .footer {
     margin-left: 0;
+    max-width: 640px;
   }
   .footer_img {
     margin-left: 65%;

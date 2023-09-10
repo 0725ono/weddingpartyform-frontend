@@ -67,7 +67,7 @@
 .toprightwords {
   position: absolute;
   color: rgb(234, 209, 45);
-  right: 7.9%;
+  right: 8%;
   top: 43%;
   z-index: 10;
 }
@@ -451,10 +451,11 @@
 } */
 
 @media screen and (max-width: 640px) {
-  /* #pagetop {
-    height: 75vh;
-  } */
+  #pagetop {
+    max-width: 640px;
+  }
   .mobileMain {
+    max-width: 640px;
     margin-left: 0;
     padding: 0;
   }
