@@ -1,0 +1,470 @@
+.mobileMain {
+  width: 100%;
+  max-width: 395px;
+  margin-left: 58.125%;
+  background-color: white;
+}
+
+#pagetop {
+  background-image: url(../../public/images/pagetop_background.jpg);
+  width: 100%;
+  aspect-ratio: 960/1346;
+  max-width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.topRightAnimationContainer {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+/* .topRightAnimationContainer::before {
+  content: "";
+  background-image: url(../../public/images/topright.png);
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  background-size: cover;
+  animation-name: sk-spinning;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  top: 10%;
+  left: 75%;
+} */
+
+.toprightBg {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 20%;
+  right: 5%;
+  z-index: 1;
+  animation-name: sk-spinning;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sk-spinning {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.toprightwords {
+  position: absolute;
+  color: rgb(234, 209, 45);
+  right: 7.4%;
+  top: 43%;
+  z-index: 10;
+}
+
+.topwords {
+  font-size: 12px;
+}
+
+.greeting {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.greetings {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 0;
+  transform-origin: left;
+  transform: rotate(90deg) translate(-50%, 30%);
+  color: white;
+  font-size: 50px;
+  text-shadow: -1px -1px rgba(142, 141, 141, 0.4),
+    1px -1px 0 rgba(142, 141, 141, 0.4), -1px 1px 0 rgba(142, 141, 141, 0.4),
+    1px 1px 0 rgba(142, 141, 141, 0.4);
+  letter-spacing: 10px;
+}
+
+/* ここからタイトルアニメーション */
+.animate-title {
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  height: 10vh;
+}
+
+.sectionTitle {
+  /* position: absolute; */
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 4px;
+  font-weight: 550;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.sectionTitle.inview {
+  opacity: 1;
+}
+
+.sectionTitle.inview .char {
+  display: inline-block;
+  animation-name: kf-animate-chars;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.sectionTitle.inview .char:nth-child(1) {
+  animation-delay: 0.04s;
+}
+.sectionTitle.inview .char:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.sectionTitle.inview .char:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.sectionTitle.inview .char:nth-child(4) {
+  animation-delay: 0.16s;
+}
+.sectionTitle.inview .char:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ここまでタイトルアニメーション */
+
+/* ここからテキストアニメーション */
+.greetMessege {
+  position: relative;
+  padding-left: 10%;
+  width: 90%;
+  height: auto;
+  line-height: 2;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.grtText {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.greetMessege.inview .grtText {
+  position: relative;
+  opacity: 0;
+  display: inline-block;
+  animation-name: kf-animate-text;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  transform: translateX(-10px);
+}
+
+@keyframes kf-animate-text {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.greetMessege.inview .grtText:nth-of-type(1) {
+  animation-delay: 0.14s;
+}
+.greetMessege.inview .grtText:nth-of-type(2) {
+  animation-delay: 0.28s;
+}
+.greetMessege.inview .grtText:nth-of-type(3) {
+  animation-delay: 0.42s;
+}
+.greetMessege.inview .grtText:nth-of-type(4) {
+  animation-delay: 0.56s;
+}
+.greetMessege.inview .grtText:nth-of-type(5) {
+  animation-delay: 0.7s;
+}
+.greetMessege.inview .grtText:nth-of-type(6) {
+  animation-delay: 0.84s;
+}
+.greetMessege.inview .grtText:nth-of-type(7) {
+  animation-delay: 0.98s;
+}
+.greetMessege.inview .grtText:nth-of-type(8) {
+  animation-delay: 1.12s;
+}
+.greetMessege.inview .grtText:nth-of-type(9) {
+  animation-delay: 1.26s;
+}
+.greetMessege.inview .grtText:nth-of-type(10) {
+  animation-delay: 1.4s;
+}
+.greetMessege.inview .grtText:nth-of-type(11) {
+  animation-delay: 1.56s;
+}
+.greetMessege.inview .grtText:nth-of-type(12) {
+  animation-delay: 1.7s;
+}
+/* ここまでテキストアニメーション */
+
+.greetName {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.space1 {
+  background-image: url("../../public/images/space01.png");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: -20%;
+}
+
+.information {
+  display: flex;
+  margin-top: -20px;
+}
+
+.infoSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.infoTitle {
+  font-size: 32px;
+  margin-top: 15px;
+  color: white;
+  margin-bottom: 0;
+  text-shadow: -1px -1px rgba(142, 141, 141, 0.4),
+    1px -1px 0 rgba(142, 141, 141, 0.4), -1px 1px 0 rgba(142, 141, 141, 0.4),
+    1px 1px 0 rgba(142, 141, 141, 0.4);
+  letter-spacing: 5px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.infoTitle.inview {
+  opacity: 1;
+}
+
+.infoTitle.inview .char {
+  display: inline-block;
+  animation-name: kf-animate-chars;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.infoTitle.inview .char:nth-child(1) {
+  animation-delay: 0.04s;
+}
+
+.infoTitle.inview .char:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.infoTitle.inview .char:nth-child(3) {
+  animation-delay: 0.12s;
+}
+
+.infoTitle.inview .char:nth-child(4) {
+  animation-delay: 0.16s;
+}
+
+.infoTitle.inview .char:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+.infoTitle.inview .char:nth-child(6) {
+  animation-delay: 0.24s;
+}
+
+.infoTitle.inview .char:nth-child(7) {
+  animation-delay: 0.28s;
+}
+
+.infoTitle.inview .char:nth-child(8) {
+  animation-delay: 0.32s;
+}
+
+.infoTitle.inview .char:nth-child(9) {
+  animation-delay: 0.36s;
+}
+
+.infoTitle.inview .char:nth-child(10) {
+  animation-delay: 0.4s;
+}
+
+.infoTitle.inview .char:nth-child(11) {
+  animation-delay: 0.44s;
+}
+
+.infoImage {
+  width: 70px;
+  height: 70px;
+  transform: translate(10px, 5px);
+}
+
+.infoDesc {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(234, 209, 45);
+  margin-top: -3%;
+  margin-right: 10%;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15%;
+}
+
+.date h2 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 450;
+}
+
+.date h3 {
+  margin: 0;
+}
+
+.day {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.reception_time {
+  font-size: 12px;
+}
+
+.hr {
+  border: none;
+  border-top: 0.5px solid black;
+  margin: 5px 0;
+}
+
+.place {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15%;
+  color: white;
+  text-align: left;
+}
+
+.flower {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 85%;
+  left: 80%;
+}
+
+.place h2 {
+  margin: 5px 0;
+}
+
+.place p {
+  font-size: 7px;
+  margin-top: 0;
+}
+
+.map {
+  background-color: black;
+  width: 80%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.mapImg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.space2 {
+  background-image: url("../../public/images/space02.png");
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: -25%;
+  margin-bottom: -60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobileMain {
+    margin-left: 48.125%;
+  }
+}
+
+/* @media screen and (max-width: 640px) {
+  .mobileMain {
+    margin-left: 0;
+  }
+} */
+
+@media screen and (max-width: 395px) {
+  /* #pagetop {
+    height: 75vh;
+  } */
+  .mobileMain {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .infoSection {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .infoTitle {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 395px) {
+    .infoTitle {
+      font-size: 25px;
+    }
+  }
+}

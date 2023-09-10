@@ -1,0 +1,125 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 395px;
+  margin-left: 58.125%;
+  background-color: white;
+}
+
+.contactBox {
+  width: 90%;
+}
+
+.attendance {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.container label {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container label input,
+.container label textarea {
+  flex-grow: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 0.5px solid #37c0d8;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container label input {
+  height: 20px;
+}
+
+.container label textarea {
+  height: 50px;
+}
+
+.container .input-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.confirm-btn {
+  margin: 25px 0 60px 0;
+  padding: 15px 40px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 15px 1px #cbd534;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.confirm-btn:hover {
+  box-shadow: 0px 0px 1px 1px #cbd534;
+}
+
+.confirm-btn:active {
+  transform: translateY(5px);
+}
+
+/* 送信完了後の画面 */
+.submitFinished {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.submitFinished h1 {
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    margin-left: 48.125%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact {
+    /* margin-left: 0; */
+    padding: 0;
+  }
+
+  @media screen and (max-width: 390px) {
+    .contact {
+      margin-left: 0;
+      padding: 0;
+    }
+  }
+}
