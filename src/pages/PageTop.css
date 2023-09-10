@@ -76,6 +76,10 @@
   font-size: 12px;
 }
 
+.sub-topwords {
+  font-size: 10px;
+}
+
 .greeting {
   position: relative;
   width: 80%;
@@ -444,7 +448,7 @@
   }
 } */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 395px) {
   /* #pagetop {
     height: 75vh;
   } */
@@ -461,10 +465,5 @@
   .infoTitle {
     font-size: 30px;
     margin-top: 20px;
-  }
-  @media screen and (max-width: 395px) {
-    .infoTitle {
-      font-size: 25px;
-    }
   }
 }

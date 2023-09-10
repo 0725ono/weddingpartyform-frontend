@@ -116,7 +116,7 @@ button {
     padding: 0;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 395px) {
     .contact {
       margin-left: 0;
       padding: 0;

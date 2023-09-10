@@ -33,7 +33,7 @@ const PageTop = () => {
             <p className="toprightwords">
               <span className="topwords">WEDDING</span>
               <br />
-              <span>INVITATION</span>
+              <span className="sub-topwords">INVITATION</span>
             </p>
           </div>
         </div>
