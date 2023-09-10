@@ -25,7 +25,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  left: 100%;
+  left: 95%;
   transform: translate(-100%, -79%);
 }
 
@@ -44,7 +44,8 @@
 }
 
 .footer_center p {
-  font-size: 3px;
+  font-size: 0.6rem;
+  margin-bottom: 0;
 }
 
 .footer_right {
