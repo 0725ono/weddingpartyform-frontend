@@ -101,25 +101,19 @@ button {
   height: calc(100vh - 50px);
 }
 
-.submitFinished h1 {
-}
+/* .submitFinished h1 {
+} */
 
 @media screen and (max-width: 1024px) {
   .contact {
     margin-left: 48.125%;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 640px) {
   .contact {
-    /* margin-left: 0; */
+    margin-left: 0;
     padding: 0;
-  }
-
-  @media screen and (max-width: 395px) {
-    .contact {
-      margin-left: 0;
-      padding: 0;
-    }
   }
 }
