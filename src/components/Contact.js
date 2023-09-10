@@ -38,7 +38,8 @@ const Contact = () => {
     // フォームの送信処理を実装する
     // データベースへの送信などを行う
     try {
-      const url = "http://localhost:3001/api/v1/send";
+      // const url = "http://localhost:3001/api/v1/send";
+      const url = process.env.PUBLIC_API_URL;
       const newForm = formData;
       const response = await axios.post(url, newForm);
       if (response.status === 200) {
@@ -219,6 +220,7 @@ const Contact = () => {
                     <input
                       type="text"
                       name="country"
+                      placeholder="例/ドイツ"
                       value={formData.country}
                       onChange={handleChange}
                     />
@@ -233,6 +235,7 @@ const Contact = () => {
                     <input
                       type="text"
                       name="drivingMusic"
+                      placeholder="例/生命体 星野源"
                       value={formData.drivingMusic}
                       onChange={handleChange}
                     />

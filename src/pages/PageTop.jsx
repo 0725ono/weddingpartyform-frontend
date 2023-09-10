@@ -53,11 +53,13 @@ const PageTop = () => {
           <div className="greetMessege" ref={addToTargets}>
             <p className="grtText">この度私たちはささやかな</p>
             <br />
-            <p className="grtText">結婚パーティーを開催する運びとなりました</p>
+            <p className="grtText">結婚パーティーを</p>
             <br />
-            <p className="grtText">
-              普段の私たちらしく日頃お世話になっている方々と
-            </p>
+            <p className="grtText">開催する運びとなりました</p>
+            <br />
+            <p className="grtText">普段の私たちらしく</p>
+            <br />
+            <p className="grtText">日頃お世話になっている方々と</p>
             <br />
             <p className="grtText">自然体で開催したいという想いから</p>
             <br />
@@ -71,11 +73,11 @@ const PageTop = () => {
             <br />
             <p className="grtText">良き日になれば幸いです</p>
             <br />
-            <p className="grtText">遠い旅の記憶のように後日ふとした瞬間に</p>
+            <p className="grtText">遠い旅の記憶のように</p>
             <br />
             <p className="grtText">あ、なんかあの時間ちょっと良かったな</p>
             <br />
-            <p className="grtText">と思えるような思い出になることを願って。</p>
+            <p className="grtText">と思い出せる日になることを願って。</p>
           </div>
           <span className="greetName">小野正博　未唯</span>
         </div>
