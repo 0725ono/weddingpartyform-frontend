@@ -39,7 +39,9 @@ const Contact = () => {
     // データベースへの送信などを行う
     try {
       // const url = "http://localhost:3001/api/v1/send";
-      const url = process.env.PUBLIC_API_URL;
+      const url = process.env.REACT_PUBLIC_API_URL;
+      //  || "http://localhost:3001/api/v1/send";
+      console.log(url);
       const newForm = formData;
       const response = await axios.post(url, newForm);
       if (response.status === 200) {
