@@ -236,10 +236,16 @@
   animation-delay: 1.4s;
 }
 .greetMessege.inview .grtText:nth-of-type(11) {
-  animation-delay: 1.56s;
+  animation-delay: 1.54s;
 }
 .greetMessege.inview .grtText:nth-of-type(12) {
-  animation-delay: 1.7s;
+  animation-delay: 1.68s;
+}
+.greetMessege.inview .grtText:nth-of-type(13) {
+  animation-delay: 1.82s;
+}
+.greetMessege.inview .grtText:nth-of-type(14) {
+  animation-delay: 1.96s;
 }
 /* ここまでテキストアニメーション */
 
