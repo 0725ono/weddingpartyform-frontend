@@ -23,8 +23,8 @@
 
 .footerFlower {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   left: 95%;
   transform: translate(-100%, -79%);
 }
@@ -60,6 +60,7 @@
 }
 
 .footer_bottom p {
+  font-size: 0.7rem;
   margin-top: 0;
 }
 

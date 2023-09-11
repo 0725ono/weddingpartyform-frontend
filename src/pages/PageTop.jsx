@@ -77,7 +77,7 @@ const PageTop = () => {
             <br />
             <p className="grtText">あ、なんかあの時間ちょっと良かったな</p>
             <br />
-            <p className="grtText">と思い出せる日になることを願って。</p>
+            <p className="grtText">と思い出せる日になることを願って</p>
           </div>
           <span className="greetName">小野正博　未唯</span>
         </div>
@@ -111,8 +111,8 @@ const PageTop = () => {
                 2023.<span className="day">11.11</span> sat
               </h2>
               <h3>
-                15:00〜18:00
-                <span className="reception_time">（受付:14:30〜）</span>
+                15:30〜18:00
+                <span className="reception_time">（受付:15:00〜）</span>
               </h3>
             </div>
             <hr className="hr" />

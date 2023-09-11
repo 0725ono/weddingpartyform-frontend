@@ -69,6 +69,15 @@ const Contact = () => {
         <div className="mobileMain">
           <div className="submitFinished">
             <h1>送信が完了しました！</h1>
+            <p className="FinishedText">
+              この画面は閉じていただいて
+              <br />
+              問題ありません。
+              <br />
+              近日中に案内のお手紙を
+              <br />
+              送らせていただきます。
+            </p>
           </div>
         </div>
       ) : showConfirmation ? (
@@ -99,7 +108,9 @@ const Contact = () => {
             <div className="contactTop">
               <h2 className="contactTitle">ご質問</h2>
               <span className="en">Questions</span>
-              <p>以下のフォームに入力をお願いします。</p>
+              <p className="contactText">
+                以下のフォームに入力をお願いします。
+              </p>
             </div>
             <div className="contactBox">
               <div className="attendance">

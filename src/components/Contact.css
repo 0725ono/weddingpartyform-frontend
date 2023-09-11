@@ -13,6 +13,16 @@
   width: 90%;
 }
 
+.contactTitle {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.contactText {
+  margin-top: 15px;
+  font-size: 0.7rem;
+}
+
 .attendance {
   text-align: center;
   margin-bottom: 10px;
@@ -70,7 +80,7 @@ button {
 }
 
 .confirm-btn {
-  margin: 25px 0 60px 0;
+  margin: 25px 0 120px 0;
   padding: 15px 40px;
   font-size: 15px;
   font-weight: 700;
@@ -99,6 +109,13 @@ button {
   justify-content: center;
   width: 100%;
   height: calc(100vh - 50px);
+}
+
+.FinishedText {
+  font-weight: 600;
+  font-size: 1rem;
+  width: 80%;
+  line-height: 2;
 }
 
 /* .submitFinished h1 {
