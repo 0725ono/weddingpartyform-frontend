@@ -19,7 +19,7 @@ const Footer = () => {
           <p>後援　一般社団法人小野観光局</p>
         </div>
         <div className="footer_right">
-          <h3>Life is Journey</h3>
+          <h3>Life and Journey</h3>
         </div>
         <img
           src="./images/footerImg.png"
@@ -28,7 +28,9 @@ const Footer = () => {
         />
       </div>
       <div className="footer_bottom">
-        <p>Design by Miyu Imashuku, coded by Masahiro Ono</p>
+        <p className="footer_bottom_text">
+          Design by Miyu Imashuku, coded by Masahiro Ono
+        </p>
       </div>
     </footer>
   );
